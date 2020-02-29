@@ -1,0 +1,97 @@
+/* Denne siden er utviklet av Malin Skår og Alexandra Thorstensen dy., siste gang endret 06.03.2019 */
+
+/* Mobil style for generelle verdier */
+    h1 {
+	color: #335442;
+    display: inline;
+	}
+	
+	h2 {
+	color: #335442;
+	font-size: 100%;
+	}
+
+    html, body {
+    height: 100%;
+    }
+
+	body {
+    margin: 0;
+    font-family: arial, helvetica, sans-serif;
+    background-color: #DCE5E1;
+    display: flex;
+    flex-direction: column;
+	}
+    
+	section {
+    background-color: #ffffff;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+    border-top: 10px solid #ffffff;
+	}
+
+	article {
+	background-color: #DCE5E1;
+    font-size: 80%;
+    border-left: 10px solid #ffffff;
+    border-right: 10px solid #ffffff;
+    border-bottom: 10px solid #ffffff;
+    padding: 15px;
+	}
+	
+	button {
+	border: none; 
+    outline: none;
+    background-color: #335442;
+    color: #ffffff; 
+    cursor: pointer; /* Endrer musepeker på hover */
+    padding: 8px;
+    font-size: 12px;
+    width: 100%;
+	height: 40px;
+	}
+
+	button:hover {
+	background-color: #607B66;
+    transition: 0.5s;
+	}
+        
+
+
+
+/* Medium large enheter, Tablet landskap - 768 */
+@media only screen and (min-width : 768px) {
+
+/* Tablet style for generelle verdier */	
+	article {
+	font-size: 90%;
+    }
+}
+
+/* Store enheter - Laptop/Desktop - 992 og opp */
+@media only screen and (min-width : 992px) {
+
+/* Laptop/Desktop style for generelle verdier */
+	h2 {
+	font-size: 100%;
+	}
+	
+	.h1-sideoverskrift {
+	font-size: 140%;
+	}
+
+	article {
+	font-size: 95%;
+    }
+}
+	
+/* Ekstra store enheter - TV, Widescreen Monitor - 1200 og opp */
+@media only screen and (min-width : 1200px) {
+
+/* TV, Widescreen Monitor style for generelle verdier */
+    header a {
+    /*font-size: 75%;*/
+    }  
+}
+/* Denne siden er kontrollert av Alexandra Thorstensen, siste gang 30.05.2019*/

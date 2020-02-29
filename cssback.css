@@ -1,0 +1,307 @@
+/* Denne siden er utviklet av Alexandra Thorstensen dy., siste gang endret 02.03.2019 */
+
+/* Mobil style for generelle verdier */
+    h1, h2, h3 {
+	color: #335462;
+	}
+
+	h2 a {
+    color: #335462;
+	}
+
+	.hovedmenyback {
+    background-color: #335462;
+    padding-top: 10px;
+    padding-bottom: 5px;
+	}
+
+	.hamburgermeny a:hover {
+    background-color: #607B86;
+	}
+
+	.navigasjon a:hover {
+    background-color: #607B86;
+	}
+
+	.brodsmuler {
+    color: #335462;   
+	}
+
+	button {
+    background-color: #335462; 
+	}
+
+	button:hover {
+	background-color: #607B86;
+    transition: 0.5s;
+	}
+
+    .knapptiltoppen {
+    background-color: #607B86;
+	}
+
+	.knapptiltoppen:hover {
+    color: #DCE5F1;
+	}
+
+	.skjemaknapp {
+    background-color: #335462; 
+	}
+
+	.skjemaknapp:hover {
+	background-color: #607B86;
+    transition: 0.5s;
+	}
+
+    tr:nth-child(even) {
+    background-color: #9DAFB8;
+    }
+
+    .footerback {
+	background-color: #335462;
+	text-align: center;
+	padding: 10px;
+	}
+
+	.footerback a:hover {
+	background-color: #607B86;
+	}
+
+/* Mobil style for hjemback.php */
+    .hjemrapporterback {
+    border-top: none;
+    margin-top: -30px;
+    }
+
+/* Mobil style for samtale.php */
+    .degselv {
+    background-color: #9DAFB8;
+    }
+
+/* Mobil style for minprofilback.php */
+    .minprofilback article {
+	height: 330px;
+    }
+
+    .minprofilback button {
+    float: left;
+    }
+
+    .interesser-minprofilback li {
+    margin-left: -25px;
+    margin-bottom: 5px;
+    }
+
+/* Mobil style for brukeradminback.php */
+    .sokbruker-article form {
+    margin-top: 20px;
+    }
+
+    .sokbruker-article input {
+    font-size: 17px;
+    float: left;
+    width: 75%;
+    margin: auto;
+    }
+
+    .sokbruker-article .skjemaknapp {
+    width: 65px;
+    padding-bottom: 12px;
+    }
+
+    .brukeradminback table {
+    margin-top: 80px;
+    }
+
+/* Mobil style for rapporterback.php */
+    .rapporter th:hover {
+    background-color: #ffffff;
+    }
+
+    .rapporter th:hover:first-child {
+    background-color: inherit;
+    }
+
+/* Mobil style for brukerhistorikkback.php */
+    .brukerhistorikk table tbody tr:hover {
+    background-color: inherit;
+    }
+
+    .brukerhistorikk tr:hover:nth-child(even) {
+    background-color: #9DAFB8
+    }
+
+/* Mobil style for ubehandletrapportback.php */
+    .ubehandletrapporter button {
+    float: none;
+    padding: 14px;
+    font-size: 16px;
+    width: 100%;
+    }
+
+/* Mobil style for behandlerapportback.php */
+    .behandlerapportmeny {
+    border-top: none;
+    margin-top: -30px;
+    }
+
+    .behandlerapport table tbody tr:hover {
+    background-color: inherit;
+    }
+
+    .behandlerapport tr:hover:nth-child(even) {
+    background-color: #9DAFB8
+    }
+
+/* Mobil style for nyheterback.php */
+	.nyhetermeny {
+	margin-bottom: 10px;
+	}
+
+    .nyhetermeny button {
+	float: none;
+    margin-top: 10px;
+    margin-right: none;
+	margin-bottom: none;
+	}
+
+/* Mobil style for reglerback.php */
+    .regler-bruk button {
+    float: none;
+    padding: 14px;
+    font-size: 16px;
+    width: 100%;
+    }
+
+/* Medium large enheter, Tablet landskap - 768 */
+@media only screen and (min-width : 768px) {
+
+/* Tablet style for hjemback.php */
+    .hjemantallback {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+        
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .hjemantallback article {
+	height: 120px;
+    }
+ 
+    .hjemrapporterback article {
+	height: 120px;
+    }
+    
+    .arrangementer-hjem {
+    border-left: 0px;
+    }
+
+    .meldinger-hjem {
+    border-left: 0px;
+    }
+    
+    .hjemrapporterback {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+        
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .fembrukere-article {
+	min-height: 250px;
+    }
+    
+    .femfeillogin-article {
+	border-left: 0px;
+    min-height: 250px;
+    }
+
+/* Tablet style for minprofilback.php */   
+    .minprofilback {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .profilbilde-minprofilback {
+    border-left: 0px;
+    }
+	
+    .interesser-minprofilback {
+    border-left: 0px;
+    }
+
+/* Tablet style for brukeradminback.php */
+    .brukeradminback {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+        
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .brukerprivilegium-article .p-margintop {
+    margin-top: 50px;
+    }
+    
+    .utestengtbruker-article {
+    border-left: 0px;
+    }
+    
+    .sokbruker-article {
+    border-left: 0px;
+    padding-bottom: 100px;
+    }
+    
+    .sokbruker-article .skjemaknapp {
+    width: 80px;
+    }
+
+/* Tablet style for behandlerapportback.php */
+    .ubehandletrapporter {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+        
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+/* Tablet style for behandlerapportback.php */
+    .behandlerapportmeny {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+        
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;    
+    }
+    
+    .behandlerapportmeny article {
+    height: 250px;
+    }
+    
+    .karantene {
+    border-left: 0px;
+    }
+
+    .ignorererapport {
+    border-left: 0px;
+    }
+
+}
+/* Denne siden er kontrollert av Alexandra Thorstensen, siste gang 03.06.2019*/

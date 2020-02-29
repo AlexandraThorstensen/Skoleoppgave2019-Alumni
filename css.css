@@ -1,0 +1,843 @@
+/* Denne siden er utviklet av Malin Skår og Alexandra Thorstensen dy., siste gang endret 06.03.2019 */
+
+/* Mobil style for generelle verdier */
+    h1 {
+	color: #335442;
+    display: inline;
+	}
+	
+	h2 {
+	color: #335442;
+	font-size: 100%;
+	}
+
+	h2 a {
+    color: #335442;
+    text-decoration: none;  
+	}
+
+    html, body {
+    height: 100%;
+    }
+
+	body {
+    margin: 0;
+    font-family: arial, helvetica, sans-serif;
+    background-color: #DCE5E1;
+    display: flex;
+    flex-direction: column;
+	}
+
+    main {
+    flex: 1 0 auto;
+    }
+
+	header {
+	display: flex;
+    flex-shrink: 0;
+	justify-content: space-around;
+    margin-right: 13px;
+	}
+
+	header a {
+    margin: 5px;
+	font-size: 13px;
+    color: #335442;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	}
+
+	header a:hover {
+    background-color: #ffffff;
+    padding: 5px;
+    transition: 0.5s;
+	}
+
+    .headertekst img {
+	width: 13px;
+	}
+
+    .headerutentekst a {
+	padding: 26px;
+	}
+
+    .headerutentekst a:hover {
+	padding: 26px;
+	}
+
+    .headerutentekst img {
+	width: 22px;
+    margin: 5px;
+	}
+    
+    .headertekst {
+	display: none;
+	}
+
+	.hovedmeny {
+    background-color: #335442;
+    padding-top: 10px;
+    padding-bottom: 5px;
+	}
+    
+    .hovedmenyutlogget {
+    background-color: #335442;
+    padding-top: 10px;
+    padding-bottom: 8px;
+	}
+ 
+	.logo-meny {
+    display: inline;
+	margin-right: 0px;
+	}
+
+	.logo-meny img{
+    float: left;
+    position: relative;
+    margin-top: 10px; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+	width: 120px;
+	}
+
+	.hamburgermeny {
+    float: right;
+    padding: 16px;
+	}
+
+	.hamburgermeny a{
+	font-size: 79%;
+	}
+
+	.hamburgermeny a:hover {
+    background-color: #607B66;
+    transition: 0.5s;
+	}
+
+	nav {
+    overflow: hidden;
+    font-family: "Open Sans", "Helvetica Neue", helvetica, sans-serif;
+	}
+
+	nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 16px;
+	}
+
+	.navigasjon {
+    text-align: right;
+    margin-top: 43px;
+	}
+
+	.navigasjon a {
+    text-align: right;
+    margin-bottom: 10px;
+	padding: 12px;
+	font-size: 80%;
+	}
+
+	.navigasjon a:hover {
+    background-color: #607B66;
+    transition: 0.5s;
+	}
+
+	.navigasjon a:not(:nth-child(0)) {
+    display: none;
+	}
+    
+	.navigasjon.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+	padding: 5px;
+	font-size: 70%;
+	}
+
+	.brodsmuler {
+    margin: 4px;
+    margin-left: 10px;
+    font-size: 55%;
+    color: #335442;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+	}
+
+/* Viser brødsmulene side om side */
+	ul.brodsmuler li {
+    display: inline;
+	}
+
+/* Legger til slash mellom sidetitlene */
+	ul.brodsmuler li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+	}
+
+/* Farge på brødsmuler */
+	ul.brodsmuler li a {
+    color: #335442;
+    text-decoration: none;
+    padding: 5px;
+	}
+
+    ul.brodsmuler li a:hover {
+    background-color: #ffffff;
+    padding: 5px;
+    transition: 0.5s;
+    }
+    
+    .tykkbrodsmule {
+    font-weight: bold;
+    }
+    
+	section {
+    background-color: #ffffff;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+    border-top: 10px solid #ffffff;
+	}
+
+	article {
+	background-color: #DCE5E1;
+    font-size: 80%;
+    border-left: 10px solid #ffffff;
+    border-right: 10px solid #ffffff;
+    border-bottom: 10px solid #ffffff;
+    padding: 15px;
+    
+    break-inside: avoid;
+	}
+
+    .tidspunktopprettet {
+    font-size: 80%;
+    float: right;
+    color: #999;
+    }
+
+    form {
+    margin-top: 10px;
+    }
+
+    form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #335442;
+    font-size: 16px;
+    }
+
+	input:focus {
+    border-color: #335442;
+	}
+
+    table {
+    border-spacing: 0;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    }
+
+    table tbody tr:hover {
+    background-color: #ffffff;
+    }
+
+    tr:nth-child(even) {
+    background-color: #9DB8AF
+    }
+
+    th, td {
+    text-align: left;
+    padding: 8px;
+    }
+
+    textarea {
+    overflow: auto;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    outline: none;
+    font-size: 16px;
+    font-family: arial, helvetica, sans-serif;
+    }
+
+	select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+	}
+        
+	button {
+	border: none; 
+    outline: none;
+    background-color: #335442;
+    color: #ffffff; 
+    cursor: pointer; /* Endrer musepeker på hover */
+    padding: 8px;
+    font-size: 12px;  
+	}
+
+	button:hover {
+	background-color: #607B66;
+    transition: 0.5s;
+	}
+
+    a button {
+	float: right;
+    margin-right: 10px;
+	margin-bottom: 10px;
+	}
+
+	.skjemaknapp {
+	border: none; 
+    outline: none; 
+    background-color: #335442; 
+    color: #ffffff; 
+    cursor: pointer; /* Endrer musepeker på hover */
+    padding: 14px;
+    margin-top: 20px;
+    font-size: 16px;
+	}
+
+	.skjemaknapp:hover {
+	background-color: #607B66;
+    transition: 0.5s;
+	}
+
+	.knapptiltoppen {
+    background-color: #607B66;
+    display: none; 
+    position: fixed; 
+    bottom: 35px; /* Plassering på skjermen T/B */
+    right: 8px; /* Plassering på skjermen H/V */
+    z-index: 99; /* Antioverlapp */
+    padding: 8px;
+    font-size: 10px;
+    opacity: 0.9;
+	}
+
+	.knapptiltoppen:hover {
+    color: #DCE5E1;
+	}
+
+	footer {
+	background-color: #335442;
+	text-align: center;
+	padding: 10px;
+    flex-shrink: 0;
+	}
+
+	footer a {
+	font-size: 55%;
+	color: #ffffff;
+	padding: 5px;
+	text-decoration: none;
+    text-transform: uppercase;
+	letter-spacing: 1px;
+	}
+
+	footer a:hover {
+	background-color: #607B66;
+	padding: 5px;
+    transition: 0.5s;
+	}
+
+	.footer-linker {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	}
+
+/* Mobil style for default.php */
+    .knapp-til-registrer {
+    float: none;
+    padding: 14px;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+    }
+
+/* Mobil style for hjem.php */
+    .hjem-articleiarticle {
+    border-left: none;
+    border-right: none;
+    border-bottom-width: medium;
+    }
+
+    .hjem-articleiarticle:last-child {
+    border-bottom: none;
+    }
+
+/* Mobil style for innboks.php */
+    .meldingoverskrift {
+    font-size: 110%;
+    padding-right: 60px;
+    }
+
+    .meldingoversikt {
+    padding-right: 60px;
+    }
+
+/* Mobil style for samtale.php */
+    .samtaler {
+    height: 300px;
+    overflow: auto;
+    }
+
+    .samtaleboble {
+    border: #ffffff;
+    background-color: #ffffff;
+    margin: 10px 0;
+    }
+
+    .samtaleboble:last-child {
+    margin-bottom: 25px;
+    }
+
+    .degselv {
+    background-color: #9DB8AF;
+    }
+
+    .samtaleboble::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    .samtaleboble img {
+    float: left;
+    max-width: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    }
+
+    .samtaleboble img.right {
+    float: right;
+    margin-right: 0;
+    }
+
+    .degselv .tidspunktopprettet {
+    float: left;
+    color: #ffffff;
+    }
+
+    .skrivmld form textarea {
+    height: 50px;
+    margin-bottom: -10px;
+    }
+
+/* Mobil style for minprofil.php */
+    .minprofil article {
+	height: 330px;
+    }
+
+    .minprofil button {
+    float: left;
+    margin-bottom: 60px;
+    }
+	
+	.interesser-minprofil li {
+    margin-left: -25px;
+    margin-bottom: 5px;
+    }
+
+/* Mobil style for finnmedlemmer.php */
+    .finnmedlemmer-article{
+    padding-bottom: 100px;
+    }
+
+    .finnmedlemmer form {
+    max-width: 700px;
+    padding-top: 10px;
+    margin: auto;
+    }
+
+    .finnmedlemmer input {
+    font-size: 17px;
+    float: left;
+    width: 70%;
+    margin: auto;
+    }
+
+    .finnmedlemmer .skjemaknapp {
+    width: 75px;
+    padding-bottom: 12px;
+    }
+
+    .finnmedlemmer table {
+    margin-top: 80px;
+    max-width: 700px;
+    }
+
+/* Mobil style for profil.php */
+    .profil article {
+	height: 330px;
+    }
+
+    .profilmeny {
+	margin-bottom: 10px;
+	}
+
+    .profil button {
+    float: left;
+    }
+
+    .profilmeny button {
+	float: none;
+    margin-top: 10px;
+    margin-right: none;
+	margin-bottom: none;
+	}
+
+    .interesser-profil li {
+    margin-left: -25px;
+    margin-bottom: 5px;
+    }
+
+/* Mobil style for nyheter.php */
+	.innboksmeny {
+	margin-bottom: 10px;
+	}
+
+    .innboksmeny button {
+	float: none;
+    margin-top: 10px;
+    margin-right: none;
+	margin-bottom: none;
+	}
+
+/* Mobil style for arrangement.php */
+	.arrangementmeny {
+	margin-bottom: 10px;
+	}
+
+    .arrangementmeny button {
+	float: none;
+    margin-top: 10px;
+    margin-right: none;
+	margin-bottom: none;
+	}
+
+    .arrangement .opprettetav {
+    font-size: 80%;
+    float: right;
+    }
+
+/* Medium large enheter, Tablet landskap - 768 */
+@media only screen and (min-width : 768px) {
+
+/* Tablet style for generelle verdier */
+    header {
+	display: flex;
+	justify-content: flex-end;	
+    }
+    
+	header a {
+    /*font-size: 65%;*/
+    margin-left: 30px;
+    }
+    
+    .headertekst {
+	display: contents;
+	}
+    
+    .headerutentekst {
+	display: none;
+	}
+	
+	.h1-sideoverskrift {
+	font-size: 120%;
+	}
+    
+    .hamburgermeny a{
+    font-size: 90%;
+    }
+    
+    .hamburgermeny {
+    /*margin-right: 3%;*/
+    }
+    
+    .navigasjon.responsive a {
+    display: inline-block;
+    font-size: 75%;
+    }
+    
+    .icon {
+    display: none;
+	}
+
+	.navigasjon a:not(:nth-child(0)) {
+    display: initial;
+	}
+    
+    .navigasjon {
+    float: right;
+    margin-top: 0px;
+    padding: 16px;
+	}
+	
+	.brodsmuler {
+    font-size: 65%;   
+    }
+	
+	article {
+	font-size: 90%;
+    }
+    
+    #knapp-til-toppen {
+    bottom: 30px; /* Place the button at the bottom of the page */
+    }
+	
+    footer a {
+	font-size: 65%;
+    }
+
+/* Tablet style for default.php */    
+    .default {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .default article {
+	height: 400px;
+    }
+    
+	.ny-bruker {
+    border-left: 0px;
+    }  
+
+/* Tablet style for registrer.php */   
+    .registrer {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .registrer article {
+	height: 450px;
+    }
+
+	.registrer-info {
+	float: right;
+    border-left: 0px;
+    }
+    
+/* Tablet style for hjem.php */
+    .hjem {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+	.arrangement-hjem {
+    border-left: 0px;
+    }
+
+/* Tablet style for minprofil.php */   
+/* Tablet style for minprofil.php */   
+    .minprofil {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .profilbilde-minprofil {
+    border-left: 0px;
+    }
+	
+    .interesser-minprofil {
+    border-left: 0px;
+    }
+
+/* Tablet style for redigerpersonalia.php */
+    .redigerpersonalia {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .redigerpersonalia article {
+	height: 350px;
+    }
+    
+    .byttpassord {
+    border-left: 0px;
+	}
+    
+    .byttepost {
+    border-left: 0px;
+	}
+    
+/* Tablet style for redigerprofilbilde.php */ 
+    .opplastningsfil {
+    border-radius: 5px;
+    border: 2px solid #607B66;
+    }
+
+/* Tablet style for redigerpersonalia.php */
+    .redigerinteresse {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .redigerinteresse article {
+	height: 200px;
+    }
+    
+    .slettinteresser {
+    border-left: 0px;
+	}
+    
+    .leggtilinteresser {
+    border-left: 0px;
+	}
+    
+/* Tablet style for finnmedlemmer.php */
+    .finnmedlemmer .skjemaknapp {
+    width: 20%;
+    }
+    
+/* Tablet style for profil.php */   
+    .profil {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+    
+    .profilbilde-profil {
+    border-left: 0px;
+    }
+	
+    .interesser-profil {
+    border-left: 0px;
+    }
+    
+/* Tablet style for nyheter.php, arrangement.php og tidligerearrangement.php */    
+    .nyheter, .arrangement, .tidligerearrangement {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    }
+
+/* Tablet style for kontakt.php */    
+    .kontakt {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+    } 
+    
+    .kontaktform-info {
+    border-left: 0px;
+    height: 317px;
+    }   
+}
+
+/* Store enheter - Laptop/Desktop - 992 og opp */
+@media only screen and (min-width : 992px) {
+
+/* Laptop/Desktop style for generelle verdier */
+	h2 {
+	font-size: 100%;
+	}
+	
+	.h1-sideoverskrift {
+	font-size: 140%;
+	}
+
+    header a {
+    /*font-size: 70%;*/
+    }
+    
+    .hamburgermeny {
+    /*margin-right: 4%;*/
+    }
+    
+	.navigasjon.responsive a {
+    font-size: 80%;
+    }
+       
+    .brodsmuler {
+    font-size: 70%;
+    }
+	
+	article {
+	font-size: 95%;
+    }
+
+    footer a {
+	font-size: 70%;
+    }
+}
+	
+/* Ekstra store enheter - TV, Widescreen Monitor - 1200 og opp */
+@media only screen and (min-width : 1200px) {
+
+/* TV, Widescreen Monitor style for generelle verdier */
+    header a {
+    /*font-size: 75%;*/
+    }
+    
+    .navigasjon.responsive a {
+    font-size: 90%;
+    }
+
+    .brodsmuler {
+    font-size: 75%;
+    }
+    
+    footer a {
+	font-size: 75%;
+    }       
+}
+/* Denne siden er kontrollert av Alexandra Thorstensen, siste gang 30.05.2019*/
